@@ -562,6 +562,330 @@ h1, h2, h3 {
         grid-template-columns: 1fr;
         gap: 35px;
     }
+  /* =========================================
+   Membership Page Styles
+   ========================================= */
+.m-hero {
+    padding: 75px 0;
+    background: var(--secondary);
+}
+
+.m-hero-inner {
+    max-width: 740px;
+}
+
+.m-hero h1 {
+    font-size: clamp(38px, 4.8vw, 58px);
+    margin-bottom: 18px;
+    color: var(--text);
+}
+
+.m-hero h1 span {
+    color: var(--primary);
+    display: block;
+}
+
+.m-hero p {
+    color: var(--muted);
+    max-width: 600px;
+    margin-bottom: 28px;
+}
+
+/* Plan Cards */
+.m-plans-section {
+    background: var(--background);
+}
+
+.m-plans-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    align-items: stretch;
+}
+
+.m-plan-card {
+    background: var(--white);
+    border: 1px solid #e6e9e2;
+    border-top: 4px solid var(--primary);
+    border-radius: 14px;
+    padding: 32px 26px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 6px 20px rgba(38, 53, 45, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.m-plan-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 36px rgba(38, 53, 45, 0.1);
+}
+
+.m-plan-featured {
+    border: 2px solid var(--primary);
+    border-top: 6px solid var(--accent);
+    box-shadow: 0 14px 32px rgba(49, 92, 70, 0.14);
+    transform: translateY(-6px);
+}
+
+.m-plan-featured:hover {
+    transform: translateY(-12px);
+}
+
+.m-badge {
+    display: inline-block;
+    align-self: flex-start;
+    background: var(--secondary);
+    color: var(--primary-dark);
+    font-size: 12px;
+    font-weight: 700;
+    padding: 5px 13px;
+    border-radius: 999px;
+    margin-bottom: 16px;
+}
+
+.m-badge-gold {
+    background: #fbf3e3;
+    color: #8c621d;
+}
+
+.m-plan-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: var(--text);
+}
+
+.m-price {
+    font-family: 'Playfair Display', serif;
+    font-size: 34px;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 12px;
+}
+
+.m-price span {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--muted);
+}
+
+.m-desc {
+    font-size: 14px;
+    color: var(--muted);
+    margin-bottom: 20px;
+}
+
+.m-stats {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    background: var(--secondary);
+    color: var(--primary-dark);
+    padding: 11px 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 22px;
+}
+
+.m-features {
+    list-style: none;
+    margin-bottom: 28px;
+    flex-grow: 1;
+}
+
+.m-features li {
+    position: relative;
+    padding: 9px 0 9px 24px;
+    font-size: 14px;
+    color: var(--text);
+    border-bottom: 1px solid #f0f2ec;
+}
+
+.m-features li:last-child {
+    border-bottom: none;
+}
+
+.m-features li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.m-btn-full {
+    text-align: center;
+    width: 100%;
+}
+
+/* Step Cards */
+.m-apply-section {
+    background: var(--white);
+}
+
+.m-steps-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+    margin-bottom: 40px;
+}
+
+.m-step-card {
+    background: var(--background);
+    border: 1px solid #e8ebe4;
+    border-radius: 12px;
+    padding: 26px 22px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.m-step-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(38, 53, 45, 0.07);
+}
+
+.m-step-num {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: var(--white);
+    font-weight: 700;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.m-step-card h3 {
+    font-size: 19px;
+    margin-bottom: 8px;
+    color: var(--text);
+}
+
+.m-step-card p {
+    font-size: 14px;
+    color: var(--muted);
+}
+
+/* Info Cards (Documents & Timings) */
+.m-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+}
+
+.m-info-card {
+    background: var(--background);
+    border: 1px solid #e8ebe4;
+    border-radius: 14px;
+    padding: 32px 28px;
+    box-shadow: 0 6px 18px rgba(38, 53, 45, 0.04);
+}
+
+.m-info-head {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.m-info-icon {
+    font-size: 26px;
+}
+
+.m-info-card h3 {
+    font-size: 22px;
+    color: var(--primary-dark);
+}
+
+.m-checklist {
+    list-style: none;
+}
+
+.m-checklist li {
+    position: relative;
+    padding: 11px 0 11px 26px;
+    font-size: 14px;
+    color: var(--text);
+    border-bottom: 1px solid #e7eae3;
+}
+
+.m-checklist li:last-child {
+    border-bottom: none;
+}
+
+.m-checklist li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.m-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 12px 0;
+    border-bottom: 1px solid #e7eae3;
+    font-size: 14px;
+}
+
+.m-row:last-child {
+    border-bottom: none;
+}
+
+.m-row span {
+    color: var(--muted);
+}
+
+.m-row strong {
+    color: var(--primary-dark);
+    text-align: right;
+}
+
+/* Membership Page Responsive Media Queries */
+@media (max-width: 950px) {
+    .m-plans-grid {
+        grid-template-columns: 1fr;
+        max-width: 540px;
+        margin: 0 auto;
+    }
+
+    .m-plan-featured {
+        transform: none;
+    }
+
+    .m-steps-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .m-info-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 650px) {
+    .m-hero {
+        padding: 55px 0;
+    }
+
+    .m-steps-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .m-plan-card,
+    .m-info-card {
+        padding: 24px 20px;
+    }
+
+    .m-stats {
+        flex-direction: column;
+        gap: 6px;
+    }
+}
 }
 
 /* =========================================
