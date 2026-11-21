@@ -564,3 +564,114 @@ h1, h2, h3 {
         gap: 35px;
     }
 }
+
+/* =========================================
+   Services Page Styles (Member 3- Atif Shahbaz Ahmad)
+   ========================================= */
+.services-hero {
+    padding: 75px 0;
+    background: var(--secondary);
+}
+
+.services-hero-content {
+    max-width: 760px;
+}
+
+.services-hero h1 {
+    font-size: clamp(38px, 4.8vw, 58px);
+    margin-bottom: 20px;
+    color: var(--text);
+}
+
+.services-hero h1 span {
+    color: var(--primary);
+    display: block;
+}
+
+.services-hero p {
+    color: var(--muted);
+    max-width: 620px;
+    margin-bottom: 28px;
+}
+
+.services-section {
+    background: var(--background);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+}
+
+.service-card {
+    background: var(--white);
+    padding: 34px 28px;
+    border: 1px solid #eceee8;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.07);
+}
+
+.service-card-wide {
+    grid-column: span 2;
+}
+
+.service-card h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    color: var(--text);
+}
+
+.service-card p {
+    font-size: 14px;
+    color: var(--muted);
+    margin-bottom: 18px;
+}
+
+.service-meta {
+    background: var(--secondary);
+    color: var(--primary-dark);
+    font-size: 13px;
+    padding: 10px 14px;
+    border-left: 3px solid var(--primary);
+    border-radius: 6px;
+    margin-bottom: 18px;
+}
+
+.service-steps {
+    padding-left: 20px;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.service-steps li {
+    margin-bottom: 8px;
+}
+
+.service-steps li:last-child {
+    margin-bottom: 0;
+}
+
+/* Services Page Responsive Media Query */
+@media (max-width: 768px) {
+    .services-hero {
+        padding: 55px 0;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card-wide {
+        grid-column: span 1;
+    }
+
+    .service-card {
+        padding: 26px 20px;
+    }
+}
