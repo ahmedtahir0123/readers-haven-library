@@ -675,3 +675,237 @@ h1, h2, h3 {
         padding: 26px 20px;
     }
 }
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f3ee;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #244b3c;
+    color: white;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h2 {
+    font-size: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+nav a:hover,
+nav a.active {
+    color: #e5c58a;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 50px 8%;
+}
+
+.contact-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-heading h1 {
+    font-size: 36px;
+    color: #244b3c;
+    margin-bottom: 12px;
+}
+
+.contact-heading p {
+    color: #666;
+    font-size: 16px;
+}
+
+/* Main Container */
+.contact-container {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    background-color: white;
+    padding: 35px;
+    border-radius: 10px;
+}
+
+/* Contact Information */
+.contact-info {
+    width: 40%;
+}
+
+.contact-info h2,
+.contact-form h2 {
+    color: #244b3c;
+    margin-bottom: 25px;
+}
+
+.info-box {
+    margin-bottom: 25px;
+}
+
+.info-box h3 {
+    color: #b18a4a;
+    margin-bottom: 8px;
+}
+
+.info-box p {
+    color: #555;
+    line-height: 1.7;
+}
+
+/* Contact Form */
+.contact-form {
+    width: 55%;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #244b3c;
+}
+
+.contact-form button {
+    background-color: #244b3c;
+    color: white;
+    border: none;
+    padding: 13px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #376b55;
+}
+
+/* Footer */
+footer {
+    background-color: #244b3c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 0;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 100%;
+    }
+}
+
+
+/* FAQ Section */
+
+.faq-section {
+    padding: 50px 8%;
+    background-color: #f5f3ee;
+}
+
+.faq-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.faq-heading h1 {
+    color: #244b3c;
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.faq-heading p {
+    color: #666;
+}
+
+/* FAQ Questions */
+
+.faq-container {
+    max-width: 850px;
+    margin: auto;
+}
+
+.faq-container details {
+    background-color: white;
+    margin-bottom: 15px;
+    padding: 18px 22px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.faq-container summary {
+    color: #244b3c;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.faq-container details p {
+    color: #555;
+    line-height: 1.7;
+    margin-top: 15px;
+    padding-top: 12px;
+    border-top: 1px solid #eee;
+}
+
+.faq-container details[open] {
+    border-color: #244b3c;
+}
